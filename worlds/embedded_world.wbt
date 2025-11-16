@@ -1,0 +1,67 @@
+#VRML_SIM R2022b utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "../protos/misc_assets/MCUFloor.proto"
+EXTERNPROTO "../protos/MCUTimingGate.proto"
+IMPORTABLE EXTERNPROTO "../protos/MCUCar.proto"
+IMPORTABLE EXTERNPROTO "../protos/tracks/MCUTrackMonaco.proto"
+IMPORTABLE EXTERNPROTO "../protos/tracks/MCUTrackSpa.proto"
+IMPORTABLE EXTERNPROTO "../protos/tracks/MCUTrackSuzuka.proto"
+IMPORTABLE EXTERNPROTO "../protos/misc_assets/MCUMotor.proto"
+IMPORTABLE EXTERNPROTO "../protos/misc_assets/MCUSensor.proto"
+IMPORTABLE EXTERNPROTO "../protos/misc_assets/MCUTyre.proto"
+
+WorldInfo {
+  basicTimeStep 5
+  coordinateSystem "NUE"
+  contactProperties [
+    ContactProperties {
+    }
+    ContactProperties {
+      material2 "nofriction"
+      coulombFriction [
+        0
+      ]
+    }
+    ContactProperties {
+      material2 "soft"
+      coulombFriction [
+        0.6351799999999865
+      ]
+    }
+    ContactProperties {
+      material2 "medium"
+      coulombFriction [
+        0.5351799999999866
+      ]
+    }
+    ContactProperties {
+      material2 "hard"
+      coulombFriction [
+        0.3351799999999866
+      ]
+    }
+  ]
+}
+Viewpoint {
+  orientation -0.8660363382461929 0.49926557310175623 -0.026738518143316084 1.9418197339422922
+  position -4.237898049407802 3.8207275696768965 2.5648808059682278
+  follow "robot"
+  followType "Mounted Shot"
+  followSmoothness 0.01
+}
+MCUFloor {
+}
+TexturedBackground {
+  texture "stadium"
+  luminosity 0.3
+}
+TexturedBackgroundLight {
+}
+MCUTimingGate {
+}
+DEF MCUCar MCUCar {
+}
+MCUTrackSpa {
+}
