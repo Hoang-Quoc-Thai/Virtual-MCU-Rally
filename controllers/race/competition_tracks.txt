@@ -1,3 +1,0 @@
-MCUTrackSuzuka.wbo
-MCUTrackSpa.wbo
-MCUTrackMonaco.wbo
